@@ -9,16 +9,6 @@
   font-family: Century Gothic;
   margin-top: 20px;
 }
-
-/* .informasiproduk p {
-  margin-bottom: 70px;
-} */
-
-/* .informasiproduk h2 {
-  margin-top: 50px;
-} */
-
-
 .displayproduk{
   background-color: #f3f5fa;
   border: none;
@@ -498,18 +488,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 
-  #hero .animated {
-    -webkit-animation: none;
-    animation: none;
-  }
-
-  #hero .hero-img {
-    text-align: center;
-  }
-  #hero .hero-img img {
-    width: 50%;
-  }
-
+  
   #informasi {
     margin-top: -35px;
     height: 750px
@@ -519,9 +498,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 25px;
   }
 
-  /* #informasi h4 {
-    font-size: 20px;
-  } */
 
   #informasi p {
     font-family: Century Gothic;
