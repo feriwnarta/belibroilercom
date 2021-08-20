@@ -59,16 +59,20 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img/ayam-carousel1.png" class="d-block w-100" alt="...">
+                <img src="img/ayam-carousel2.png" class="d-block w-100" height="450px"  alt="...">
               </div>
               <div class="carousel-item">
-                <img src="img/ayam-carousel2.png" class="d-block w-100" alt="...">
+                <img src="img/ayam-carousel1.png" class="d-block w-100" height="450px" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="img/ayam-carousel3.png" class="d-block w-100" alt="...">
+                <img src="img/carousel3.png" class="d-block w-100" height="450px" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel1.png" class="d-block w-100" height="450px" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -98,14 +102,16 @@
             </div>
           </div>
 
-          <div class="row" data-aos="zoom-in">
+          <div class="row" data-aos="fade-up">
             <div class="col-md-12">
-              <h4>belibroiler, menjual ayam karkas potong hidup, tersedia berbagai ukuran. Kondisi daging dalam    Kondisi halal dan fresh karena langsung potong dari kandang. Pemesanan bisa dilakukan melalui website ini dengan mengisi form pemesanan dibawah. Atau bisa Juga Melakukan Pemesanan Melalui WhatsApp, Ukuran dan harga ayam terkadang berubah mengikuti kondisi Kandang, Pembayaran Bisa Dilakukan Melalui Ovo, Bca, Dan Cod Pesanan Bisa Diantarkan melalui grab expres, atau jika membeli diatas 5 ekor akan diantarkan gratis bila rumah anda berada di daerah tercoverage.</h4>
+              <p>belibroiler menjual ayam karkas potong hidup tersedia berbagai ukuran Kondisi daging dalam Kondisi halal dan fresh karena langsung potong dari kandang Pemesanan bisa dilakukan melalui website ini dengan mengisi form pemesanan dibawah Atau bisa Juga Melakukan Pemesanan Melalui WhatsApp Ukuran dan harga ayam terkadang berubah mengikuti kondisi Kandang Pembayaran Bisa Dilakukan Melalui Ovo Bca Dan Cod Pesanan Bisa Diantarkan melalui grab expres atau jika membeli diatas 5 ekor akan diantarkan gratis bila rumah anda berada di daerah tercoverage.</p>
+              <p>daerah tercoverage : seluruh sewan, poris, tangga asem, kedaung, sepatan, bayur, selapajang</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Akhir Informasi Produk -->
 
     <!-- ======= Display Produk======= -->
@@ -117,9 +123,9 @@
         <div class="row content">
           <div class="col-md-4">
             <div class="card" data-aos="fade-up">
-              <img src="img/ayam-carousel3.png" height = "200-xclass="card-img-top" alt="...">
+              <img src="img/display4.png" height = "200-xclass="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">1 KG (27.000)</h5>
+                <h5 class="card-title">1 KG (28.000)</h5>
                 <p class="card-text">Ukuran Ayam Potong Hidup 1KG, Potong Karkas tidak termasuk kepala
                   dan ceker
                 </p>
@@ -130,7 +136,7 @@
 
           <div class="col-md-4">
             <div class="card" data-aos="fade-up">
-              <img src="img/ayam-carousel3.png" height = "200-xclass="card-img-top" alt="...">
+              <img src="img/display3.png" height = "200-xclass="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">1.2 KG (32.500)</h5>
                 <p class="card-text">Ukuran Ayam Potong Hidup 1.2KG, Potong Karkas tidak termasuk kepala
@@ -142,9 +148,9 @@
 
           <div class="col-md-4">
             <div class="card" data-aos="fade-up">
-              <img src="img/ayam-carousel3.png" height = "200-xclass="card-img-top" alt="...">
+              <img src="img/display2.png" height = "200-xclass="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">1.3 KG (35.000)</h5>
+                <h5 class="card-title">1.3 KG (35.500)</h5>
                 <p class="card-text">Ukuran Ayam Potong Hidup 1.3KG, Potong Karkas tidak termasuk kepala
                   dan ceker</p>
                 <a href="#pemesanan" class="btn btn-primary">Pesan Sekarang</a>
@@ -167,22 +173,28 @@
 
           <div class="row">
             <div class="col-md-12">
-              <form class="row g-3">
+
+              <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
+                <strong>Terima Kasih</strong> Pesanan Akan Diproses
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+
+              <form name="submit-to-google-sheet" class="row g-3">
                 <div class="col-md-12" data-aos="fade-up">
                   <label for="inputnama" class="form-label">Nama</label>
-                  <input type="name" class="form-control" id="inputname">
+                  <input type="name" class="form-control" id="inputname" name="nama">
                 </div>
                 <div class="col-md-12" data-aos="fade-up">
                   <label for="inputnomor" class="form-label">Nomor Telpon</label>
-                  <input type="name" class="form-control" id="inputname">
+                  <input type="name" class="form-control" id="inputname" name="nomor telpon">
                 </div>
                 <div class="col-12" data-aos="fade-up">
                   <label for="inputAddress" class="form-label">Alamat</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Jln Rawa Kucing....">
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Jln Rawa Kucing...." name="alamat">
                 </div>
                 <div class="col-md-12" data-aos="fade-up">
                   <label for="inputkota" class="form-label">Kota</label>
-                  <select id="inputkota" class="form-select">
+                  <select id="inputkota" class="form-select" name="kota">
                     <option selected>Pilih Kota</option>
                     <option>Tangerang</option>
                     <option>Tangerang Selatan</option>
@@ -192,7 +204,7 @@
                 </div>
                 <div class="col-md-9" data-aos="fade-up">
                   <label for="inputukuran" class="form-label">Ukuran Ayam</label>
-                  <select id="inputukuran" class="form-select">
+                  <select id="inputukuran" class="form-select" name="ukuran ayam">
                     <option selected>Pilih Ukuran Ayam</option>
                     <option>1 KG</option>
                     <option>1.2 KG</option>
@@ -201,10 +213,16 @@
                 </div>
                 <div class="col-md-3" data-aos="fade-up">
                   <label for="inputZip" class="form-label">Jumlah</label>
-                  <input type="text" class="form-control" id="inputZip">
+                  <input type="text" class="form-control" id="inputZip" name="jumlah">
                 </div>
                 <div class="col-12" data-aos="fade-up">
-                  <button type="submit" class="btn btn-primary">Pesan</button>
+                  <button type="submit" class="btn btn-primary btn-kirim">kirim</button>
+
+                  
+                  <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
                 </div>
               </form>
             </div>
@@ -226,9 +244,7 @@
 
           <div class="row">
               <div class="col-md-4" data-aos="fade-up">
-                <a href="google.com">
-                  <img src="img/wa.png" alt="logo whatsapp">
-                </a>
+                <a href="https://api.whatsapp.com/send?phone=6285714342528"><img src="img/wa.png" alt="logo whatsapp"></a>
                 <br><br>
               <div class="alert alert-warning" role="alert">
                   Klik Gambar WhatsApp Untuk Menuju Pemesanan Melalui WhatsApp 
@@ -241,9 +257,8 @@
               <br><br>
           <div class="alert alert-warning" role="alert">
             <p>Rekening Bca / Feri Winarta</p>
-            <input type="text" value="1082325110" id="myInput">
-            <button onclick="myFunction1()">Copy text</button>  
-            <br><br>
+             <input type="text" id="copyTarget" value="1082325110">
+             <button id="copyButton">Copy</button><br><br>
           </div>
         </div>
           <div class="col-md-4" data-aos="fade-up">
@@ -251,9 +266,8 @@
               <br><br>
           <div class="alert alert-warning" role="alert">
             <p>Nomor Ovo / Feri Winarta</p>
-            <input type="text" value="39358085714342528" id="myInput2">
-            <button onclick="myFunction2()">Copy text</button>  
-            <br><br>
+              <input type="text" id="copyTarget2" value="39358085714342528">
+             <button id="copyButton2">Copy</button><br><br>
           </div>
         </div>
           </div>
@@ -325,6 +339,34 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwB3dqLz2rsIA7D2EyyTiy6VP1y6kQwN4i0DuvWkzIDZxx8XfphfWXAq4S3XAf288X6/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const btnKirim = document.querySelector('.btn-kirim');
+    const btnLoading = document.querySelector('.btn-loading');
+    const btnSukses = document.querySelector('.my-alert');
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+
+      btnLoading.classList.toggle('d-none');
+      btnKirim.classList.toggle('d-none');
+
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+
+          btnLoading.classList.toggle('d-none');
+          btnKirim.classList.toggle('d-none');
+          btnSukses.classList.toggle('d-none');
+
+          form.reset();
+          console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
 
