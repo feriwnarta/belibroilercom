@@ -174,27 +174,27 @@
           <div class="row">
             <div class="col-md-12">
 
-              <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
+              <!-- <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
                 <strong>Terima Kasih</strong> Pesanan Akan Diproses
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-
-              <form name="submit-to-google-sheet" class="row g-3">
+              </div> -->
+              
+              <form name="submit-to-google-sheet" class="row g-3 needs-validation">
                 <div class="col-md-12" data-aos="fade-up">
                   <label for="inputnama" class="form-label">Nama</label>
-                  <input type="name" class="form-control" id="inputname" name="nama">
+                  <input type="name" class="form-control" id="inputname" name="nama" required>
                 </div>
                 <div class="col-md-12" data-aos="fade-up">
                   <label for="inputnomor" class="form-label">Nomor Telpon</label>
-                  <input type="name" class="form-control" id="inputname" name="nomor telpon">
+                  <input type="name" class="form-control" id="inputname" name="nomor telpon" required>
                 </div>
                 <div class="col-12" data-aos="fade-up">
                   <label for="inputAddress" class="form-label">Alamat</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Jln Rawa Kucing...." name="alamat">
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Jln Rawa Kucing...." name="alamat"  required>
                 </div>
                 <div class="col-md-12" data-aos="fade-up">
                   <label for="inputkota" class="form-label">Kota</label>
-                  <select id="inputkota" class="form-select" name="kota">
+                  <select id="inputkota" class="form-select" name="kota" required>
                     <option selected>Pilih Kota</option>
                     <option>Tangerang</option>
                     <option>Tangerang Selatan</option>
@@ -204,8 +204,7 @@
                 </div>
                 <div class="col-md-9" data-aos="fade-up">
                   <label for="inputukuran" class="form-label">Ukuran Ayam</label>
-                  <select id="inputukuran" class="form-select" name="ukuran ayam">
-                    <option selected>Pilih Ukuran Ayam</option>
+                  <select id="inputukuran" class="form-select" name="ukuran ayam" required>
                     <option>1 KG</option>
                     <option>1.2 KG</option>
                     <option>1.3 KG</option>
@@ -213,18 +212,22 @@
                 </div>
                 <div class="col-md-3" data-aos="fade-up">
                   <label for="inputZip" class="form-label">Jumlah</label>
-                  <input type="text" class="form-control" id="inputZip" name="jumlah">
+                  <input type="text" class="form-control" id="inputZip" name="jumlah" required>
                 </div>
-                <div class="col-12" data-aos="fade-up">
+                <div class="col-md-12" data-aos="fade-up">
                   <button type="submit" class="btn btn-primary btn-kirim">kirim</button>
-
-                  
                   <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     Loading...
                   </button>
+                  <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
+                    <strong>Terima Kasih</strong> Pesanan Akan Diproses
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
                 </div>
               </form>
+
+
             </div>
           </div>
         </div>  
